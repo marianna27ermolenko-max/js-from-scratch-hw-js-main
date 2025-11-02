@@ -5,4 +5,17 @@
 */
 
 // your code
-let sum
+let sum = 0;
+let count = 1;
+const NUMBER_OFNUMBERS = 20;
+
+while (count<=NUMBER_OFNUMBERS) {
+  if (count%2>0) {
+    sum = sum + count
+    count ++
+  }
+  else {
+  count ++
+  };
+};
+console.log(sum);

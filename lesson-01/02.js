@@ -6,4 +6,13 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+let count = 1;
+const NUMBER_OFNUMBERS = 10;
+
+while(count<=NUMBER_OFNUMBERS){
+factorial = factorial * count;
+
+count ++;
+};
+console.log(factorial);
