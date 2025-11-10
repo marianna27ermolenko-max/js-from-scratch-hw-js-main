@@ -44,7 +44,8 @@ if (randomNumber2 === 0) {
 }
 
 
-isWinningDouble = (dice1 === dice2) &&  dice1 > 3 &&  dice2 > 3 ? 'Выигрышный дубль!' : 'Не выигрышный дубль.'; 
+isWinningDouble = (dice1 === dice2) &&  dice1 > 3 &&  dice2 > 3; 
+
 
 /*
 console.log('Первый бросок: ' + dice1)
