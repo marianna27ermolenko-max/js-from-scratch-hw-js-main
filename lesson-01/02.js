@@ -16,3 +16,5 @@ factorial = factorial * count;
 count ++;
 };
 console.log(factorial);
+
+
