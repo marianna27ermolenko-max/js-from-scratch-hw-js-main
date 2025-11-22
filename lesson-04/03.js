@@ -29,7 +29,7 @@ function findCommonElements(array1, array2) {
 
             identical.push(scores1)
 
-        }
+        } 
 
     }
 
@@ -37,18 +37,18 @@ function findCommonElements(array1, array2) {
 }
 
 
-function includesElement(array, element) {
-    for (let i = 0; i < array.length; i++) {
+// function includesElement(array, element) {
+//     for (let i = 0; i < array.length; i++) {
 
-        if (array[i] === element) {
+//         if (array[i] === element) {
 
-            return true;
+//             return true;
 
-        }
-    }
-    return false;
-}
+//         }
+//     }
+//     return false;
+// }
 
-// const num1 = [1, 2, 3];
+// const num1 = [1, 5, 7, 8];
 // const num2 = [2, 3, 4];
 // console.log(findCommonElements(num1, num2));
