@@ -1,5 +1,6 @@
 /*
-Напишите функцию `findUniqueElements`, которая принимает массив и возвращает новый массив, содержащий только уникальные элементы из исходного массива.
+Напишите функцию `findUniqueElements`, которая принимает массив и возвращает новый массив, содержащий только уникальные 
+элементы из исходного массива.
 
 **Входные данные:**
 
@@ -12,7 +13,39 @@
 **Пример использования:**
 `findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
 
-Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
+Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно,
+ она доступна по всему проекту за счёт hoisting.
 */
 
-function findUniqueElements() {}
+function findUniqueElements(array) {
+
+const correct = [];
+
+for(let i = 0; i < array.length; i++){
+
+  const scores = array[i];
+
+  if(!includesElement(correct, scores)){  
+  correct.push(scores);
+  }
+}
+  return correct
+}
+
+
+
+// const num = [1, 2, 3, 2, 1, 4];
+// console.log(findUniqueElements(num));
+
+function includesElement(array, element) {
+  for (let i = 0; i < array.length; i++) {
+
+    if (array[i] === element) {
+
+      return true;
+
+    }
+  }
+  return false;
+}
+
