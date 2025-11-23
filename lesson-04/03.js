@@ -30,24 +30,24 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 // }
 
 
-function findCommonElements(array1, array2) {
+// function findCommonElements(array1, array2) {
 
-    const identical = [];
+//     const identical = [];
 
-    for (let i = 0; i < array1.length; i++) {
+//     for (let i = 0; i < array1.length; i++) {
 
-        const scores1 = array1[i]
+//         const scores1 = array1[i]
 
-        if (includesElement(array2, scores1)) {
+//         if (includesElement(array2, scores1)) {
 
-            identical.push(scores1)
+//             identical.push(scores1)
 
-        } 
+//         } 
 
-    }
+//     }
 
-    return identical
-}
+//     return identical
+// }
 
 
 
@@ -55,3 +55,21 @@ function findCommonElements(array1, array2) {
 // const num1 = [1, 5, 7, 8];
 // const num2 = [2, 5, 4];
 // console.log(findCommonElements(num1, num2));
+
+
+function findCommonElements(array1, array2) {
+  const commonElements = [];
+  
+  // Проходим по элементам первого массива
+  for (let i = 0; i < array1.length; i++) {
+    const currentElement = array1[i];
+    
+    // Проверяем, есть ли текущий элемент во втором массиве
+    if (includesElement(array2, currentElement)) {
+      // Если элемент есть во втором массиве, добавляем его в результат
+      commonElements.push(currentElement);
+    }
+  }
+  
+  return commonElements;
+}
