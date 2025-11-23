@@ -32,21 +32,20 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 function findCommonElements(array1, array2) {
 
-    const identical = [];
+    const commonEl = [];
 
     for (let i = 0; i < array1.length; i++) {
 
-        const scores1 = array1[i];
+        const currentEl = array1[i];
 
-        if (includesElement(array2, scores1)) {
+        if (includesElement(array2, currentEl)) {
 
-            identical.push(scores1);
+            commonEl.push(currentEl);
 
         } 
-
     }
 
-    return identical;
+    return commonEl;
 }
 
 
