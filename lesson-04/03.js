@@ -30,23 +30,23 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 // }
 
 
-function findCommonElements(array1, array2) {
+// function findCommonElements(array1, array2) {
 
-    const commonEl = [];
+//     const commonEl = [];
 
-    for (let i = 0; i < array1.length; i++) {
+//     for (let i = 0; i < array1.length; i++) {
 
-        const currentEl = array1[i];
+//         const currentEl = array1[i];
 
-        if (includesElement(array2, currentEl)) {
+//         if (includesElement(array2, currentEl)) {
 
-            commonEl.push(currentEl);
+//             commonEl.push(currentEl);
 
-        } 
-    }
+//         } 
+//     }
 
-    return commonEl;
-}
+//     return commonEl;
+// }
 
 
 
@@ -56,19 +56,19 @@ function findCommonElements(array1, array2) {
 // console.log(findCommonElements(num1, num2));
 
 
-// function findCommonElements(array1, array2) {
-//   const commonElements = [];
+function findCommonElements(array1, array2) {
+  const commonElements = [];
   
-//   // Проходим по элементам первого массива
-//   for (let i = 0; i < array1.length; i++) {
-//     const currentElement = array1[i];
+  // Проходим по элементам первого массива
+  for (let i = 0; i < array1.length; i++) {
+    const currentElement = array1[i];
     
-//     // Проверяем, есть ли текущий элемент во втором массиве
-//     if (includesElement(array2, currentElement)) {
-//       // Если элемент есть во втором массиве, добавляем его в результат
-//       commonElements.push(currentElement);
-//     }
-//   }
+    // Проверяем, есть ли текущий элемент во втором массиве
+    if (includesElement(array2, currentElement)) {
+      // Если элемент есть во втором массиве, добавляем его в результат
+      commonElements.push(currentElement);
+    }
+  }
   
-//   return commonElements;
-// }
+  return commonElements;
+}
