@@ -29,6 +29,7 @@ function includesElement(array, element) {
     return false;
 }
 
+
 function findCommonElements(array1, array2) {
 
     const identical = [];
@@ -52,5 +53,5 @@ function findCommonElements(array1, array2) {
 
 
 // const num1 = [1, 5, 7, 8];
-// const num2 = [2, 3, 4];
+// const num2 = [2, 5, 4];
 // console.log(findCommonElements(num1, num2));
