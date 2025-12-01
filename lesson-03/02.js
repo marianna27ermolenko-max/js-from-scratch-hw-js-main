@@ -15,7 +15,7 @@
 
 function isEven(number) {
 
-     let answer = number%2 === 0 ? true : false;   
-     return answer
+     let answer = number%2 === 0 ? true : false;   // или так - let answer = number%2 === 0; или return number%2 === 0
+     return answer;
     
 }
