@@ -24,9 +24,9 @@ const doubledNumbers = map(numbers, (element, index) => {
 console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
-const callback = (element, index) => {
+const callback = (element, i) => {
 
-  return element = element * 2
+  return element * 2
 
 };
 
@@ -39,7 +39,7 @@ const map = (array, callback) => {
 
     const scores = array[i];
 
-    doubleNum.push(callback(scores))
+    doubleNum.push(callback(scores, i))
 
   }
 
@@ -48,6 +48,6 @@ const map = (array, callback) => {
 }
 
 
-// const numbers = [1, 9, 3, 8, 5]
-// console.log(map(numbers, callback));
+const numbers = [1, 9, 3, 8, 5]
+console.log(map(numbers, callback));
 
